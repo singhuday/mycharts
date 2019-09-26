@@ -1,0 +1,47 @@
+{
+  "name": "firstchart",
+  "private": false,
+  "version": "1.0.0",
+  "description": "First chart app",
+  "main": "bin/index.js",
+  "scripts": {
+    "build": "webpack-cli --mode=production --config webpack.config.js",
+    "build:dev": "webpack-cli --mode=development --config webpack.config.js",
+    "start": "node bin/index.js",
+    "test": "echo test",
+    "lint": "tslint ./src/**/*.ts -t verbose"
+  },
+  "keywords": [
+    "Chart.js",
+    "SSR",
+    "SVG",
+    "Canvas",
+    "html5"
+  ],
+  "author": "uday",
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^2.8.0",
+    "red-agate-svg-canvas": "^0.2.19",
+    "red-agate-util": "^0.2.19"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/register": "^7.6.2",
+    "@types/chart.js": "^2.7.52",
+    "@types/node": "^12.0.2",
+    "babel-loader": "^8.0.6",
+    "source-map-loader": "^0.2.4",
+    "ts-loader": "^6.0.1",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.5",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com:singhuday/mycharts.git"
+  }
+}
